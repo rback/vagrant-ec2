@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.define :vbox do |vbox_config|
     vbox_config.vm.box = "precise64"
     vbox_config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-    vbox_config.vm.provider :aws
+    vbox_config.vm.provider :virtualbox
   end
 
   config.vm.define :aws do |aws_config|
